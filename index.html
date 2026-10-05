@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Umesh Chandra Reddy - Student Project Hub">
+  <title>Umesh Chandra Reddy | Student Project Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">UCR<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#data">Data</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme" id="themeBtn" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SE WEBSITE MAKING TASK • 2026–27</p>
+        <h1>Build. Learn.<br><span>Ship.</span></h1>
+        <p class="lead">A student project hub by <strong>Umesh Chandra Reddy</strong>, focused on practical software development, AI/ML and modern web technologies.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore Projects →</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Umeshreddy06" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/vumeshchandra-reddy" target="_blank">LinkedIn</a>
+          <a href="https://medium.com/@vumeshchandrareddy/real-time-object-detection-logging-platform-using-python-yolo-and-mysql-by-umesh-chandra-reddy-17c8674d286e" target="_blank">Medium</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="orb"></div>
+        <div class="card-top"><span>STUDENT DEVELOPER</span><span>2026</span></div>
+        <div class="code-box">
+          <div><span class="pink">const</span> developer = {</div>
+          <div>&nbsp;&nbsp;name: <span class="green">"Umesh"</span>,</div>
+          <div>&nbsp;&nbsp;focus: <span class="green">"AI/ML + Web"</span>,</div>
+          <div>&nbsp;&nbsp;status: <span class="green">"Building"</span></div>
+          <div>};</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head"><p class="eyebrow">01 — ABOUT</p><h2>Turning ideas into useful software.</h2></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I am <strong>Umesh Chandra Reddy</strong>, a B.Tech CSE (AI & ML) student at Sandip University. I enjoy building practical applications that combine programming, databases and modern web technologies.</p>
+          <p>This website is designed as a small project management and portfolio system. It includes a client-side database using the browser's <strong>IndexedDB</strong> API so project/contact data can be created and managed without a backend server.</p>
+        </div>
+        <div class="stats">
+          <div><strong>2029</strong><span>Expected Graduation</span></div>
+          <div><strong>AI/ML</strong><span>Academic Focus</span></div>
+          <div><strong>5+</strong><span>Core Technologies</span></div>
+          <div><strong>∞</strong><span>Learning Mindset</span></div>
+        </div>
+      </div>
+      <div class="skills">
+        <span>Python</span><span>C</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git & GitHub</span><span>MySQL</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="section-head"><p class="eyebrow">02 — PROJECTS</p><h2>Selected work</h2><p>Projects stored in the browser database below.</p></div>
+      <div id="projectGrid" class="project-grid"></div>
+    </section>
+
+    <section id="data" class="section">
+      <div class="section-head"><p class="eyebrow">03 — DATABASE</p><h2>Project & message manager</h2><p>Add records to demonstrate CRUD-style data management. Data is stored in a real browser database (IndexedDB).</p></div>
+      <div class="data-grid">
+        <div class="panel">
+          <h3>Add a project</h3>
+          <form id="projectForm">
+            <input id="pTitle" placeholder="Project title" required>
+            <input id="pTech" placeholder="Technologies (e.g. Python, MySQL)" required>
+            <textarea id="pDesc" placeholder="Short description" required></textarea>
+            <button class="btn primary" type="submit">Save Project</button>
+          </form>
+        </div>
+        <div class="panel">
+          <h3>Saved records</h3>
+          <div id="recordList" class="records"></div>
+          <button class="btn danger" id="clearBtn" type="button">Clear Added Records</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="section-head"><p class="eyebrow">04 — CONTACT</p><h2>Let's build something.</h2><p>Your message is saved to the browser database for this demonstration.</p></div>
+      <form id="contactForm" class="contact-form">
+        <input id="cName" placeholder="Your name" required>
+        <input id="cEmail" type="email" placeholder="Your email" required>
+        <textarea id="cMessage" placeholder="Your message" required></textarea>
+        <button class="btn primary" type="submit">Send Message →</button>
+      </form>
+      <div id="toast" class="toast"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>UCR.</strong> Student Project Hub</div>
+    <div>© 2026 Umesh Chandra Reddy</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
